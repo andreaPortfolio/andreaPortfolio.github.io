@@ -1,0 +1,239 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header */
+
+header {
+    border-bottom: solid 3px #dddddd;
+    height: 70px;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #909090;
+    margin-bottom: 0;
+}
+
+header h3 {
+    font-weight: normal;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #ddd;
+    margin-top: 0;
+}
+
+.wrapper {
+    display: block;
+}
+
+.wrapper-text {
+    float: right;
+}
+
+/* central image */
+.logo {
+    width: 70px;
+    margin-left: 100px;
+}
+
+.main-img {
+    margin-top: 2em;
+}
+
+/* portfolio */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works {
+    width: calc((100% - 4em) / 3);
+    margin: 1em 2em 0 0;
+    text-align: center;
+}
+
+.works:last-of-type {
+    margin-right: 0;
+}
+
+.fatured-work {
+    margin: 1em 0 0 0.3em;
+    font-weight: normal;
+    font-size: 2.4em;
+    color: #ddd;
+}
+
+.portfolio h2 {
+    font-weight: normal;
+    font-size: 2.4em;
+    color: #909090;
+    margin: 0.4em 0 0.4em 0;
+    text-transform: uppercase;
+}
+
+.portfolio a,
+a:visited {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* footer */
+
+footer {
+    border-top: solid 3px #dddddd;
+    margin: 3em auto;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 1em;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a, a:visited {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+footer p {
+    margin: 1em;
+    text-align: center;
+    color: #909090;
+}
+
+/* brandico */
+
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+    font-size: 40px;
+    color: #f8981c;
+}
+
+/* media query */
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .portfolio h2 {
+        font-weight: normal;
+        font-size: 2em;
+    }
+
+    .portfolio a {
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+
+    .container {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header h3 {
+        font-size: 0.6em;
+    }
+
+    .portfolio h2 {
+        font-size: 1.8em;
+    }
+
+    .portfolio a {
+        font-size: 0.7em;
+    }
+
+    .container {
+        width: 640px;
+    }
+
+    .fatured-work {
+        font-size: 2.1em;
+        margin-top: 0.8em;
+    }
+
+    [    class*="brandico-"]:before {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header h3 {
+        font-size: 0.6em;
+    }
+
+    .logo {
+        margin-left: 10px;
+        width: 30px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .portfolio img {
+        width: 100%;
+    }
+
+    .portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    .portfolio a {
+        font-size: 0.7em;
+    }
+
+    .main-img {
+        margin-bottom: 3em;
+    }
+
+    .works {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .fatured-work {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    [    class*="brandico-"]:before {
+        font-size: 25px;
+    }
+
+    .work-link {
+        display: none;
+    }
+}
